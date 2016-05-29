@@ -10,13 +10,13 @@
 #define LANG_H
 
 #ifdef _LANG_AS
-    #define INTROTERM "PROGRAMA DE TELEBOT"
-    #define ERRCONEXTERM " Nun se pue conectar col bot\n"
-    #define OKCONEXTERM "Pudo crease la conexión col bot\n"
+    #define INTROTERM "PROGRAMA DE XOSEPIN"
+    #define ERRCONEXTERM " Nun se pue conectar con Xosepín\n"
+    #define OKCONEXTERM "Pudo crease la coexión con Xosepín\n"
 #elif _LANG_ES
-    #define INTROTERM "PROGRAMA DE TELEBOT"
-    #define ERRCONEXTERM "No se puede conectar con el bot\n"
-    #define OKCONEXTERM "Se ha podido establecer la conexión con el bot\n"
+    #define INTROTERM "PROGRAMA DE JOSEPIN"
+    #define ERRCONEXTERM "No se puede conectar con Josepín\n"
+    #define OKCONEXTERM "Se ha podido establecer la conexión con Josepin\n"
 #endif
 
 

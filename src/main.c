@@ -1,8 +1,7 @@
 /***************************************************************************//**
  *   @file   main.c
- *   @brief  Archivo principal del proyecto TeleBot que se encargará de
- *           controlar el bot de Telegram genérico y del que partiran los
- *           desarrollos de los subproyectos TelvinaBot y JosepinBot.
+ *   @brief  Archivo principal del proyecto JosepinBot que se encargar de
+ *           controlar el bot de Telegram Josepin
  *   @author PBL
 *******************************************************************************/
 
@@ -44,7 +43,7 @@ int main (int argc, char const *argv[]) {
         fprintf (stdout, "******************* %s *******************\n", INTROTERM);
     #endif
 
-    CargaConfig("TB.cfg");
+    CargaConfig("TVB.cfg");
 
     sendMSG(TelBot.adminId,"Acabo de despertar");
 
