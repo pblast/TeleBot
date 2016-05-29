@@ -1,30 +1,29 @@
-/***************************************************************************//**
+/*****************************************************************//**
  *   @file   daemon.c
- *   @brief  Archivo que recoge las funciones necesarias para la creacin de un
- *           demonio que se ejecute en segundo plano
+ *   @brief  Archivo que recoge las funciones necesarias para la creacin de un demonio que se ejecute en segundo plano
  *   @author PBL
-*******************************************************************************/
+*********************************************************************/
 
-/******************************************************************************/
-/*                                  INCLUDES                                  */
-/******************************************************************************/
-    #include <stdlib.h>
-    #include <stdio.h>
-    #include  <sys/types.h>
-    #include <sys/stat.h>
-    #include <unistd.h>
+/********************************************************************/
+/*                           INCLUDES                               */
+/********************************************************************/
+#include <stdlib.h>
+#include <stdio.h>
+#include  <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
 
-/******************************************************************************/
-/*                                  FUNCIONES                                 */
-/******************************************************************************/
+
+/********************************************************************/
+/*                           FUNCIONES                              */
+/********************************************************************/
 
 int startDaemon (void){
     pid_t id_process = 0;
     pid_t sid = 0;
 
-    /* Se crea el proceso hijo y se comprueba si ha habido algun fallo en la
-    creación. De haberlo se sale devolviendo error */
+    /* Se crea el proceso hijo y se comprueba si ha habido algun fallo en la cración. De haberlo se sale devolviendo error */
     id_process = fork ();
 
     if (id_process < 0) {
@@ -46,7 +45,6 @@ int startDaemon (void){
     close (STDIN_FILENO);
     close (STDOUT_FILENO);
     close (STDERR_FILENO);
-    
     return 0;
 }
 

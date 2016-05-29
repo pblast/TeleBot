@@ -1,8 +1,7 @@
 /***************************************************************************//**
  *   @file   main.h
  *   @brief  Archivo que contiene las definiciones principales para el proyecto
- *           TeleBot que controla el bot de generico de telegram que se dividirá
- *           en dos subproyectos: TelvinaBot y JosepinBot
+ *           Telvinabot que controla el bot de telegram Telvina
  *   @author PBL
 *******************************************************************************/
 
