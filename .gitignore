@@ -1,3 +1,7 @@
+# Archivos de Proyecto
+*.cfg
+*.log
+
 # Object files
 *.o
 *.ko
